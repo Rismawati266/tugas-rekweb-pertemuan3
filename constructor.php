@@ -1,12 +1,12 @@
 <?php 
 
 	class Produk {
-		public 	$judul = "judul", //property dari kelas
-				$penulis = "penulis",
-				$penerbit = "penerbit",
-				$harga = 0;
+		public 	$judul, //property dari kelas
+				$penulis,
+				$penerbit,
+				$harga;
 
-		public function __construct( $judul, $penulis, $penerbit, $harga ) { // variabel lokal
+		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0 ) { // variabel lokal
 			$this->judul = $judul;
 			$this->penulis = $penulis;
 			$this->penerbit = $penerbit;
@@ -18,12 +18,12 @@
 		}
 	}
 
-	$produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen Jump",  30000);
-	$produk2 = new Produk("Uncharted", "Nail Druckmann", "Sony Computer, 250000);
+	$produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000);
+	$produk2 = new Produk("Uncharted", "Nail Druckmann", "Sony Computer", 250000);
 
-	echo "Komik : " . $produk3->getLabel();
+	echo "Komik : " . $produk1->getLabel();
 	echo "<br>";
-	echo "Game : " . $produk4->getLabel();
+	echo "Game : " . $produk2->getLabel();
 
 
  ?>
