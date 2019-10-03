@@ -5,6 +5,10 @@
 				$penulis = "penulis",
 				$penerbit = "penerbit",
 				$harga = 0;
+
+		public function getLabel() {
+			return "$this->penulis, $this->penerbit"; // method
+		}
 	}
 
 	// $produk1 = new Produk();
@@ -23,6 +27,7 @@
 	$produk3->harga = 30000;
 	var_dump($produk3);
 
-	echo "Komik : $produk3->penulis, $produk3->penerbit";
+	// echo "Komik : $produk3->penulis, $produk3->penerbit";
 
+	echo $produk3->getLabel();
  ?>
