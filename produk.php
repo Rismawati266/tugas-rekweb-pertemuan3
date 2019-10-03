@@ -23,4 +23,6 @@
 	$produk3->harga = 30000;
 	var_dump($produk3);
 
+	echo "Komik : $produk3->penulis, $produk3->penerbit";
+
  ?>
