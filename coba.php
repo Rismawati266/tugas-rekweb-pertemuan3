@@ -5,4 +5,5 @@
 	}
 
 	$a = new Coba();
+	$b = new Coba();
  ?>
