@@ -30,4 +30,14 @@
 	// echo "Komik : $produk3->penulis, $produk3->penerbit";
 
 	echo $produk3->getLabel();
+
+	echo "<hr>";
+
+	$produk4 = new Produk();
+	$produk4->judul = "Uncharted"; // ditimpa
+	$produk4->penulis = "Nail Druckmann";
+	$produk4->penerbit = "Sony Computer";
+	$produk4->harga = 250000;
+	var_dump($produk4);
+
  ?>
