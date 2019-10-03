@@ -6,5 +6,6 @@
 				$penerbit,
 				$harga;
 	}
-	
+
+	$produk1 = new Produk();
  ?>
