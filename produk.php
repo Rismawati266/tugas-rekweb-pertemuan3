@@ -7,13 +7,20 @@
 				$harga = 0;
 	}
 
-	$produk1 = new Produk();
-	$produk1->judul = "Naruto"; // ditimpa
-	var_dump($produk1);
+	// $produk1 = new Produk();
+	// $produk1->judul = "Naruto"; // ditimpa
+	// var_dump($produk1);
 
-	$produk2 = new Produk();
-	$produk2->judul = "Ucharted"; // ditimpa
-	$produk2->tambahProperty = "hahaha";
-	var_dump($produk2);
+	// $produk2 = new Produk();
+	// $produk2->judul = "Ucharted"; // ditimpa
+	// $produk2->tambahProperty = "hahaha";
+	// var_dump($produk2);
+
+	$produk3 = new Produk();
+	$produk3->judul = "Naruto"; // ditimpa
+	$produk3->penulis = "Masashi Kishimoto";
+	$produk3->penerbit = "Shonen Jump";
+	$produk3->harga = 30000;
+	var_dump($produk3);
 
  ?>
