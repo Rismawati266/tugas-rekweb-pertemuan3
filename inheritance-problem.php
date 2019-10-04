@@ -4,7 +4,9 @@
 		public 	$judul, //property dari kelas
 				$penulis,
 				$penerbit,
-				$harga;
+				$harga,
+				$jmlHalaman,
+				$waktuMain;
 
 		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0 ) { // variabel lokal
 			$this->judul = $judul;
@@ -28,8 +30,9 @@
 	$produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000);
 	$produk2 = new Produk("Uncharted", "Nail Druckmann", "Sony Computer", 250000);
 
-// Komik : Masashi Kishimoto, Shonen Jump
-// Game : Nail Druckmann, Sony Computer
-// Naruto | Masashi Kishimoto, Shonen Jump (Rp. 30000)
+// Komik : Naruto | Masashi Kishimoto, Shonen Jump (Rp. 30000) - 100 Halaman.
+// Game : Uncharted | Nail Druckmann, Sony Computer
+// Naruto | Masashi Kishimoto, Shonen Jump (Rp. 250000) - 50 Jam
+
 
  ?>
