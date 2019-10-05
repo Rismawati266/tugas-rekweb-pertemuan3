@@ -3,8 +3,8 @@
 	class Produk {
 		public 	$judul, //property dari kelas
 				$penulis,
-				$penerbit,
-				$diskon = 0; // persentasi dari sebuah produk
+				$penerbit;
+		protected $diskon = 0; // persentasi dari sebuah produk
 		private $harga;
 
 		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0 ) { // variabel lokal
