@@ -14,7 +14,11 @@
 			$this->harga = $harga;
 		}
 
-			public function getHarga() {
+		public function setDiskon( $diskon ) {// memberikan diskon // setdiskon-> ngasih sebuah diskon sebuah barang panggil setdiskon
+			$this->diskon = $diskon;
+		}
+
+		public function getHarga() {
 			return $this->harga; // bisa diakses di kelas produk beserta kelas turunanya.
 		}
 
