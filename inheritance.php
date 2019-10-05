@@ -24,12 +24,8 @@
 		}
 
 		public function getInfoProduk() { // informasi lengakp dari sebuah produk
-			$str = "{$this->tipe} : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
-			if( $this->tipe == "Komik" ) {
-				$str .= " - {$this->jmlHalaman} Halaman.";
-			} else if ($this->tipe == "Game" ) {
-				$str .= " ~ {$this->waktuMain} Jam.";
-			}
+			$str = "{$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
+
 			return $str;
 		}
 	}
@@ -40,6 +36,14 @@
 			return $str;
 		}
 	}
+
+	class Game extends Produk {
+		public function getInfoProduk() {
+			$str = "Game : {$this->tipe} : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga}) - {$this->waktuMain} Jam.";
+			return $str;
+		}
+	}
+
 
 	class CetakInfoProduk {
 		public function cetak( Produk $produk ){ // method cetak
