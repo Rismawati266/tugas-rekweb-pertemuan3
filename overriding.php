@@ -29,8 +29,10 @@
 	class Komik extends Produk { // kelas child 
 		public $jmlHalaman;
 
-		public function __construct() {
-			
+		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $jmlHalaman = 0 ) {
+
+			parent::__construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0);
+			$this->jmlHalaman = $jmlHalaman;
 		}
 
 		public function getInfoProduk() {
@@ -54,8 +56,8 @@
 		}
 	}
 
-	$produk1 = new Komik("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100, 0);
-	$produk2 = new Game("Uncharted", "Nail Druckmann", "Sony Computer", 250000, 0, 50);
+	$produk1 = new Komik("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100);
+	$produk2 = new Game("Uncharted", "Nail Druckmann", "Sony Computer", 250000, 50);
 
 
 	echo $produk1->getInfoProduk();
