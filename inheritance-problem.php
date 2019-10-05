@@ -6,15 +6,17 @@
 				$penerbit,
 				$harga,
 				$jmlHalaman,
-				$waktuMain;
+				$waktuMain
+				$tipe;
 
-		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $jmlHalaman = 0, $waktuMain = 0 ) { // variabel lokal
+		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $jmlHalaman = 0, $waktuMain = 0, $tipe ) { // variabel lokal
 			$this->judul = $judul;
 			$this->penulis = $penulis;
 			$this->penerbit = $penerbit;
 			$this->harga = $harga;
 			$this->jmlHalaman = $jmlHalaman;
 			$this->waktuMain = $waktuMain;
+			$this->tipe = $tipe;
 		}
 
 		public function getLabel() {
