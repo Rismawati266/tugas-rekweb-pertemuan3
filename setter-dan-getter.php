@@ -116,6 +116,7 @@
 
 	echo $produk1->getJudul();
 	echo "<br>";
+	$produk1->setPenulis("Sandika Galih");
 	echo $produk1->getPenulis();
 
 
