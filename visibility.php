@@ -4,7 +4,7 @@
 		public 	$judul, //property dari kelas
 				$penulis,
 				$penerbit,
-				$harga;
+		protected $harga;
 
 		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0 ) { // variabel lokal
 			$this->judul = $judul;
