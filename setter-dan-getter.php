@@ -34,8 +34,12 @@
 			$this->penerbit = $penerbit;
 		}
 
-		public function getPenulis() {
-			return $this->penulis;
+		public function getPenerbit() {
+			return $this->penerbit;
+		}
+
+		public function setHarga( $harga ) {
+			$this->harga = $harga; // harga setelah diskon 
 		}
 
 		public function getHarga() {
