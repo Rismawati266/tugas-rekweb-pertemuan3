@@ -13,6 +13,10 @@
 			$this->harga = $harga;
 		}
 
+			public function getHarga() {
+			return $this->harga; // bisa diakses di kelas produk beserta kelas turunanya.
+		}
+
 		public function getLabel() {
 			return "$this->penulis, $this->penerbit"; // method
 		}
@@ -48,9 +52,6 @@
 			$this->waktuMain = $waktuMain;
 		}
 
-		public function getHarga() {
-			return $this->harga; // bisa diakses di kelas produk beserta kelas turunanya.
-		}
 
 		public function getInfoProduk() {
 			$str = "Game : " . parent::getInfoProduk() . " - {$this->waktuMain} Jam.";
