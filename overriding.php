@@ -42,6 +42,8 @@
 	}
 
 	class Game extends Produk {
+		public $waktuMain;
+		
 		public function getInfoProduk() {
 			$str = "Game : " . parent::getInfoProduk() . " - {$this->waktuMain} Jam.";
 			return $str;
