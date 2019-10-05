@@ -4,15 +4,13 @@
 		public 	$judul, //property dari kelas
 				$penulis,
 				$penerbit,
-				$harga,
-				$waktuMain;
+				$harga;
 
-		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $waktuMain = 0 ) { // variabel lokal
+		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0 ) { // variabel lokal
 			$this->judul = $judul;
 			$this->penulis = $penulis;
 			$this->penerbit = $penerbit;
 			$this->harga = $harga;
-			$this->waktuMain = $waktuMain;
 		}
 
 		public function getLabel() {
