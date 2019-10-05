@@ -19,7 +19,7 @@
 		}
 
 		public function getHarga() {
-			return $this->harga; // bisa diakses di kelas produk beserta kelas turunanya.
+			return $this->harga - ( $this->harga * $this->diskon / 100 ); // bisa diakses di kelas produk beserta kelas turunanya. Harga setelah diberi diskon
 		}
 
 		public function getLabel() {
