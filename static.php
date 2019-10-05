@@ -17,10 +17,15 @@
 	class Contoh {
 		public $angka = 1;
 
-		public functio halo() {
-			return "Halo" . $this->angka . " kali.";
+		public function halo() {
+			return "Halo" . $this->angka++ . " kali. <br>";
 		}
 	}
+
+	$obj = new Contoh;
+	echo $obj->halo();
+	echo $obj->halo();
+	echo $obj->halo();
 
 
  ?>
