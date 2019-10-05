@@ -114,8 +114,9 @@
 	echo $produk2->getHarga();
 	echo "<hr>";
 
-	$produk1->setJudul("JudulBaru");
 	echo $produk1->getJudul();
+	echo "<br>";
+	echo $produk1->getPenulis();
 
 
  ?>
