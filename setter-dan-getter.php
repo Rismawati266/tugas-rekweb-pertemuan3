@@ -3,9 +3,9 @@
 	class Produk {
 		private $judul, //property dari kelas
 				$penulis,
-				$penerbit;
+				$penerbit,
+				$harga;
 		protected $diskon = 0; // persentasi dari sebuah produk
-		private $harga;
 
 		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0 ) { // variabel lokal
 			$this->judul = $judul;
@@ -36,6 +36,10 @@
 
 		public function getPenerbit() {
 			return $this->penerbit;
+		}
+
+		public function setDiskon( $diskon ) {
+			$this->diskon = $diskon;
 		}
 
 		public function setHarga( $harga ) {
@@ -79,10 +83,6 @@
 
 			parent::__construct( $judul, $penulis, $penerbit, $harga );
 			$this->waktuMain = $waktuMain;
-		}
-
-		public function setDiskon( $diskon ) {// memberikan diskon // setdiskon-> ngasih sebuah diskon sebuah barang panggil setdiskon
-			$this->diskon = $diskon;
 		}
 
 		public function getInfoProduk() {
