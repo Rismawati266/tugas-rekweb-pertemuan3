@@ -42,6 +42,10 @@
 			$this->diskon = $diskon;
 		}
 
+		public function getDiskon() {
+			return $this->diskon;
+		}
+
 		public function setHarga( $harga ) {
 			$this->harga = $harga; // harga setelah diskon 
 		}
