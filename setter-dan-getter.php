@@ -1,7 +1,7 @@
 <?php 
 
 	class Produk {
-		public 	$judul, //property dari kelas
+		private $judul, //property dari kelas
 				$penulis,
 				$penerbit;
 		protected $diskon = 0; // persentasi dari sebuah produk
@@ -12,6 +12,10 @@
 			$this->penulis = $penulis;
 			$this->penerbit = $penerbit;
 			$this->harga = $harga;
+		}
+
+		public function getJudul() {
+			return $this->judul;
 		}
 
 		public function getHarga() {
@@ -80,6 +84,7 @@
 
 	$produk2->setDiskon(50);
 	echo $produk2->getHarga();
+	echo "<hr>";
 
 
 
