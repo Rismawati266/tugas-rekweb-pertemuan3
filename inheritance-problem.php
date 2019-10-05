@@ -22,6 +22,16 @@
 		public function getLabel() {
 			return "$this->penulis, $this->penerbit"; // method
 		}
+
+		public fuction getInfoLengkap() { // informasi lengakp dari sebuah produk
+			$str = "{$this->tipe} : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
+			if( $this->tipe == "Komik" ) {
+				$str .= " - {$this->jmlHalaman} Halaman.";
+			} else if (this->tipe == "Game" ) {
+				$str .= " ~ {$this->waktuMain} Jam.";
+			}
+			return $str;
+		}
 	}
 
 	class CetakInfoProduk {
@@ -34,9 +44,7 @@
 	$produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100, 0, "Komik");
 	$produk2 = new Produk("Uncharted", "Nail Druckmann", "Sony Computer", 250000, 0, 50, "Game");
 
-// Komik : Naruto | Masashi Kishimoto, Shonen Jump (Rp. 30000) - 100 Halaman.
-// Game : Uncharted | Nail Druckmann, Sony Computer
-// Naruto | Masashi Kishimoto, Shonen Jump (Rp. 250000) - 50 Jam
+	
 
 
  ?>
