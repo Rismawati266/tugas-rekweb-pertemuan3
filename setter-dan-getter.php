@@ -14,6 +14,10 @@
 			$this->harga = $harga;
 		}
 
+		public function setJudul( $judul ) {
+			$this->judul = $judul;
+		}
+
 		public function getJudul() {
 			return $this->judul;
 		}
@@ -86,6 +90,7 @@
 	echo $produk2->getHarga();
 	echo "<hr>";
 
+	echo $produk1->getJudul();
 
 
  ?>
