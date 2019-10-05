@@ -63,7 +63,6 @@
 		}
 	}
 
-
 	class CetakInfoProduk {
 		public function cetak( Produk $produk ){ // method cetak
 			$str = "{$produk->judul} | {$produk->getLabel()} (Rp. {$produk->harga})";// mengembalikan nilai sebuah string
