@@ -9,6 +9,8 @@
 	}
 
 	echo ContohStatic::$angka; // mencetak angka 1. mengakses property atau method keyword static
-	
+	echo "<br>";
+	echo ContohStatic::Hallo();
+
 
  ?>
