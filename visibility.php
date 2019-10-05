@@ -14,10 +14,6 @@
 			$this->harga = $harga;
 		}
 
-		public function setDiskon( $diskon ) {// memberikan diskon // setdiskon-> ngasih sebuah diskon sebuah barang panggil setdiskon
-			$this->diskon = $diskon;
-		}
-
 		public function getHarga() {
 			return $this->harga - ( $this->harga * $this->diskon / 100 ); // bisa diakses di kelas produk beserta kelas turunanya. Harga setelah diberi diskon
 		}
@@ -57,6 +53,9 @@
 			$this->waktuMain = $waktuMain;
 		}
 
+		public function setDiskon( $diskon ) {// memberikan diskon // setdiskon-> ngasih sebuah diskon sebuah barang panggil setdiskon
+			$this->diskon = $diskon;
+		}
 
 		public function getInfoProduk() {
 			$str = "Game : " . parent::getInfoProduk() . " - {$this->waktuMain} Jam.";
