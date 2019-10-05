@@ -22,6 +22,10 @@
 			return $this->judul;
 		}
 
+		public function setPenulis ( $penulis) {
+			$this->penulis = $penulis;
+		}
+		
 		public function getHarga() {
 			return $this->harga - ( $this->harga * $this->diskon / 100 ); // bisa diakses di kelas produk beserta kelas turunanya. Harga setelah diberi diskon
 		}
