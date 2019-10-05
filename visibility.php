@@ -68,6 +68,7 @@
 	echo $produk1->getInfoProduk();
 	echo "<br>";
 	echo $produk2->getInfoProduk();
+	echo "<hr>";
 
 
 
