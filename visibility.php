@@ -80,6 +80,7 @@
 	echo $produk2->getInfoProduk();
 	echo "<hr>";
 
+	$produk2->setDiskon(50);
 	echo $produk2->getHarga();
 
 
