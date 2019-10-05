@@ -3,7 +3,7 @@
 	class Produk {
 		public 	$judul, //property dari kelas
 				$penulis,
-				$penerbit,
+				$penerbit;
 		protected $harga;
 
 		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0 ) { // variabel lokal
@@ -73,6 +73,8 @@
 	echo "<br>";
 	echo $produk2->getInfoProduk();
 	echo "<hr>";
+
+	echo $produk2->getHarga();
 
 
 
