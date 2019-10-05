@@ -6,7 +6,7 @@
 				$penerbit,
 				$harga,
 				$jmlHalaman,
-				$waktuMain
+				$waktuMain,
 				$tipe;
 
 		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $jmlHalaman = 0, $waktuMain = 0, $tipe ) { // variabel lokal
@@ -23,7 +23,7 @@
 			return "$this->penulis, $this->penerbit"; // method
 		}
 
-		public fuction getInfoLengkap() { // informasi lengakp dari sebuah produk
+		public function getInfoLengkap() { // informasi lengakp dari sebuah produk
 			$str = "{$this->tipe} : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
 			if( $this->tipe == "Komik" ) {
 				$str .= " - {$this->jmlHalaman} Halaman.";
@@ -44,7 +44,6 @@
 	$produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100, 0, "Komik");
 	$produk2 = new Produk("Uncharted", "Nail Druckmann", "Sony Computer", 250000, 0, 50, "Game");
 
-	
 
 
  ?>
