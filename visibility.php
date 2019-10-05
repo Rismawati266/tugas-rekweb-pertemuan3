@@ -48,6 +48,10 @@
 			$this->waktuMain = $waktuMain;
 		}
 
+		public function getHarga() {
+			return $this->harga; // bisa diakses di kelas produk beserta kelas turunanya.
+		}
+
 		public function getInfoProduk() {
 			$str = "Game : " . parent::getInfoProduk() . " - {$this->waktuMain} Jam.";
 			return $str;
