@@ -5,15 +5,13 @@
 				$penulis,
 				$penerbit,
 				$harga,
-				$jmlHalaman,
 				$waktuMain;
 
-		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $jmlHalaman = 0, $waktuMain = 0 ) { // variabel lokal
+		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $waktuMain = 0 ) { // variabel lokal
 			$this->judul = $judul;
 			$this->penulis = $penulis;
 			$this->penerbit = $penerbit;
 			$this->harga = $harga;
-			$this->jmlHalaman = $jmlHalaman;
 			$this->waktuMain = $waktuMain;
 		}
 
@@ -29,6 +27,8 @@
 	}
 
 	class Komik extends Produk { // kelas child 
+		public $jmlHalaman;
+
 		public function getInfoProduk() {
 			$str = "Komik : " . parent::getInfoProduk() . " - {$this->jmlHalaman} Halaman.";
 			return $str;
