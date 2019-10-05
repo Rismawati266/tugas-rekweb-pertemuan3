@@ -23,7 +23,7 @@
 			return "$this->penulis, $this->penerbit"; // method
 		}
 
-		public function getInfoLengkap() { // informasi lengakp dari sebuah produk
+		public function getInfoProduk() { // informasi lengakp dari sebuah produk
 			$str = "{$this->tipe} : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
 			if( $this->tipe == "Komik" ) {
 				$str .= " - {$this->jmlHalaman} Halaman.";
@@ -35,7 +35,10 @@
 	}
 
 	class Komik extends Produk { // kelas child 
-
+		public function getInfoProduk() {
+			$str = "Komik : {$this->tipe} : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga}) - {$this->jmlHalaman} Halaman.";
+			return $str;
+		}
 	}
 
 	class CetakInfoProduk {
@@ -48,9 +51,9 @@
 	$produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100, 0, "Komik");
 	$produk2 = new Produk("Uncharted", "Nail Druckmann", "Sony Computer", 250000, 0, 50, "Game");
 
-	echo $produk1->getInfoLengkap();
+	echo $produk1->getInfoProduk();
 	echo "<br>";
-	echo $produk2->getInfoLengkap();
+	echo $produk2->getInfoProduk();
 	
 
 
