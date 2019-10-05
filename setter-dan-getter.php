@@ -4,8 +4,8 @@
 		private $judul, //property dari kelas
 				$penulis,
 				$penerbit,
-				$harga;
-		protected $diskon = 0; // persentasi dari sebuah produk
+				$harga,
+				$diskon = 0; // persentasi dari sebuah produk
 
 		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0 ) { // variabel lokal
 			$this->judul = $judul;
