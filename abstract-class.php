@@ -1,6 +1,6 @@
 <?php 
 
-	class Produk {
+	abstract class Produk {
 		private $judul, //property dari kelas
 				$penulis,
 				$penerbit,
@@ -58,7 +58,8 @@
 			return "$this->penulis, $this->penerbit"; // method
 		}
 
-		public function getInfoProduk() { // informasi lengakp dari sebuah produk
+		abstract public function getInfoProduk(); // informasi lengakp dari sebuah produk
+		public function getInfo{
 			$str = "{$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
 
 			return $str;
