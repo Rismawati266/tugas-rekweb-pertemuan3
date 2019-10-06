@@ -76,7 +76,7 @@
 		}
 
 		public function getInfoProduk() {
-			$str = "Komik : " . parent::getInfoProduk() . " - {$this->jmlHalaman} Halaman.";
+			$str = "Komik : " . $this->getInfo() . " - {$this->jmlHalaman} Halaman.";
 			return $str;
 		}
 	}
@@ -91,7 +91,7 @@
 		}
 
 		public function getInfoProduk() {
-			$str = "Game : " . parent::getInfoProduk() . " - {$this->waktuMain} Jam.";
+			$str = "Game : " . $this->getInfo() . " - {$this->waktuMain} Jam.";
 			return $str;
 		}
 	}
