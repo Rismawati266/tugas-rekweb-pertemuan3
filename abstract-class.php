@@ -106,7 +106,7 @@
 			$str = "DAFTAR PRODUK : <br>";
 
 			foreach( $this->daftarPrduk as $p ) { // dari daftarProduk kita ambil objek peoduk satu persatu
-				$str .= "- {$p->getInfoProduk()} <br>"; // kita akan bangun stringnya. nampilin info secara lengkap
+				$str .= "- {$p->getInfoProduk()} <br>"; // kita akan bangun stringnya. nampilin info secara detail
 			}
 
 			return $str;
@@ -116,6 +116,7 @@
 	$produk1 = new Komik("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100);
 	$produk2 = new Game("Uncharted", "Nail Druckmann", "Sony Computer", 250000, 50);
 
-
+	$cetakProduk = new cetakProduk();
+	
 
  ?>
