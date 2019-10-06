@@ -1,5 +1,9 @@
 <?php 
 
+	interface InfoProduk {
+		public function getInfoProduk();
+	}
+
 	abstract class Produk {
 		private $judul, //property dari kelas
 				$penulis,
@@ -58,7 +62,6 @@
 			return "$this->penulis, $this->penerbit"; // method
 		}
 
-		abstract public function getInfoProduk(); // informasi lengakp dari sebuah produk
 		public function getInfo() {
 			$str = "{$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
 
