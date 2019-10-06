@@ -11,6 +11,14 @@
 	// echo $cetakProduk->cetak(); // menampilkan dua produk sekaligus
 
 
+	use App\Service\User as ServiceUser;
+	use App\Produk\User as ProdukUser;
+	// new App\Produk\User(); // muncul isi dari function construct
+	//echo "<br>";
+	//new App\Service\User();
 
-	new User(); // muncul isi dari function construct
+	new ServiceUser();
+	echo "<br>";
+	new ProdukUser();
+
  ?>
