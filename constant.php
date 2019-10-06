@@ -14,6 +14,7 @@
 
 	// echo Coba::NAMA;
 	
+	
 	echo __LINE__;
 	echo "<br>";
 	echo __FILE__;
