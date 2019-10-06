@@ -66,6 +66,7 @@
 		}
 	}
 
+
 	class Komik extends Produk { // kelas child // perluasan fungsionalitas ada di kelas2 ada di kelas child yaitu jumlah halaman dan waktu main 
 		public $jmlHalaman;
 
