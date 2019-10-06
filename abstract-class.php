@@ -117,6 +117,6 @@
 	$produk2 = new Game("Uncharted", "Nail Druckmann", "Sony Computer", 250000, 50);
 
 	$cetakProduk = new cetakProduk();
-	
+	$cetakProduk->tambahProduk( $produk1 );
 
  ?>
