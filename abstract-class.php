@@ -59,7 +59,7 @@
 		}
 
 		abstract public function getInfoProduk(); // informasi lengakp dari sebuah produk
-		public function getInfo{
+		public function getInfo() {
 			$str = "{$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
 
 			return $str;
