@@ -119,5 +119,6 @@
 	$cetakProduk = new cetakProduk();
 	$cetakProduk->tambahProduk( $produk1 );
 	$cetakProduk->tambahProduk( $produk2 );
+	echo $cetakProduk->cetak(); // menampilkan dua produk sekaligus
 
  ?>
