@@ -4,8 +4,8 @@
 		public function getInfoProduk();
 	}
 
-	class Produk {
-		private $judul, //property dari kelas
+	abstract class Produk {
+		protected $judul, //property dari kelas
 				$penulis,
 				$penerbit,
 				$harga,
@@ -62,11 +62,8 @@
 			return "$this->penulis, $this->penerbit"; // method
 		}
 
-		public function getInfo() {
-			$str = "{$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
+		abstract public function getInfo();
 
-			return $str;
-		}
 	}
 
 
@@ -77,6 +74,12 @@
 
 			parent::__construct( $judul, $penulis, $penerbit, $harga );
 			$this->jmlHalaman = $jmlHalaman;
+		}
+
+		public function getInfo() {
+			$str = "{$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
+
+			return $str;
 		}
 
 		public function getInfoProduk() {
@@ -92,6 +95,12 @@
 
 			parent::__construct( $judul, $penulis, $penerbit, $harga );
 			$this->waktuMain = $waktuMain;
+		}
+
+		public function getInfo() {
+			$str = "{$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
+
+			return $str;
 		}
 
 		public function getInfoProduk() {
