@@ -8,10 +8,13 @@
 	// const UMUR = 32; // gapapa bisa simpan di kelas
 	// echo UMUR;
 
-	class Coba {
-		const NAMA = 'Sandika';
-	}
+	// class Coba {
+	// 	const NAMA = 'Sandika';
+	// }
 
-	echo Coba::NAMA;
+	// echo Coba::NAMA;
+	
+	echo __LINE__;
+	
 
  ?>
