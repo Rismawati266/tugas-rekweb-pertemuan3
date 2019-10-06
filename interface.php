@@ -4,7 +4,7 @@
 		public function getInfoProduk();
 	}
 
-	abstract class Produk {
+	class Produk {
 		private $judul, //property dari kelas
 				$penulis,
 				$penerbit,
@@ -70,7 +70,7 @@
 	}
 
 
-	class Komik extends Produk { // kelas child // perluasan fungsionalitas ada di kelas2 ada di kelas child yaitu jumlah halaman dan waktu main 
+	class Komik extends Produk implements InfoProduk { // kelas child // perluasan fungsionalitas ada di kelas2 ada di kelas child yaitu jumlah halaman dan waktu main 
 		public $jmlHalaman;
 
 		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $jmlHalaman = 0 ) {
@@ -85,7 +85,7 @@
 		}
 	}
 
-	class Game extends Produk {
+	class Game extends Produk implements InfoProduk {
 		public $waktuMain;
 
 		public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $waktuMain = 0 ) {
